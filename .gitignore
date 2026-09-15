@@ -1,0 +1,25 @@
+node_modules
+
+# Secrets / environment files - never commit these
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+ims-backend/.env
+client/.env
+
+# Build output
+client/dist
+ims-backend/dist
+
+# Local dev logs (backend-out*.log, backend*.log, etc. from local runs)
+*.log
+ims-backend/*.log
+
+# Local database file / dumps - never commit real shop data
+ims-backend/database/
+
+# User-uploaded content (runtime data, not source)
+ims-backend/uploads/
